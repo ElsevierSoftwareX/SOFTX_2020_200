@@ -374,7 +374,7 @@ namespace Parameters
   
   struct Nitsche
   {
-    Mesh solid_mesh
+    Mesh solid_mesh;
 
     // Penalization term
     double beta;
