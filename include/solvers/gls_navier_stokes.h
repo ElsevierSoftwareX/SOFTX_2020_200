@@ -57,7 +57,7 @@ protected:
   void
   set_solution_vector(double value);
 
-private:
+protected:
   template <bool                                              assemble_matrix,
             Parameters::SimulationControl::TimeSteppingMethod scheme,
             Parameters::VelocitySource::VelocitySourceType    velocity_source>
@@ -128,7 +128,7 @@ private:
   /**
    * Members
    */
-private:
+protected:
   SparsityPattern                                    sparsity_pattern;
   TrilinosWrappers::SparseMatrix                     system_matrix;
   std::shared_ptr<TrilinosWrappers::PreconditionILU> ilu_preconditioner;
