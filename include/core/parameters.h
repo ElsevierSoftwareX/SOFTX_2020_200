@@ -35,7 +35,7 @@ namespace Parameters
     quiet,
     verbose
   };
-  enum class Particule_Assemble_type
+  enum class Particle_Assemble_type
   {
     NS,
     mass
@@ -466,20 +466,20 @@ namespace Parameters
     void
     parse_parameters(ParameterHandler &prm);
   };
-    class Particules{
+    class Particles{
         // Time measurement in the simulation. None, at each iteration, only at the
         // end
     public:
         unsigned int nb ;
         unsigned int order;
-        unsigned int int_p_per_nb_iter;
+        unsigned int nb_force_eval;
         unsigned int initial_refinement;
         double inside_radius;
         double outside_radius;
         bool assemble_inside ;
         bool pressure_mpi ;
-        Particule_Assemble_type P_assemble;
-        std::vector<std::vector<double>>  particules;
+        Particle_Assemble_type P_assemble;
+        std::vector<std::vector<double>>  particles;
         std::vector<std::vector<double>>  pressure_offset;
 
         static void
