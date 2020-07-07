@@ -371,7 +371,7 @@ namespace Parameters
     void
     parse_parameters(ParameterHandler &prm);
   };
-  
+
   struct Nitsche
   {
     Mesh solid_mesh;
