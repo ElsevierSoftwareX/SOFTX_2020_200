@@ -900,6 +900,7 @@ NavierStokesBase<dim, VectorType, DofsType>::postprocess(bool firstIter)
                 {
                   total_time += summary[it->first];
                 }
+
               this->error_table.add_value("total_time", total_time);
             }
           else
